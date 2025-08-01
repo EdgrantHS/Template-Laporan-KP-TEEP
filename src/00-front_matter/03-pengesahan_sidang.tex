@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Halaman Pengesahan Laporan Kerja Praktik
+% Disesuaikan berdasarkan gambar yang diberikan.
+%
+% Template ini mereplikasi tata letak dokumen:
+% - Judul dan informasi di tengah atas.
+% - Dua kolom untuk pembimbing.
+% - Satu blok di tengah bawah untuk koordinator.
+% - Footer dengan nomor halaman dan nama universitas.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Set font size to 11pt for this page only
+\fontsize{11}{16}\selectfont
+
+% ----- Bagian Header dan Judul -----
+\begin{center}
+    \textbf{LEMBAR PENGESAHAN}
+    
+    \vspace{0.5cm}
+    
+    \textbf{LAPORAN KERJA PRAKTIK}
+    
+    \vspace{0.5cm}
+    
+    \textbf{\MakeUppercase{\namaUniv}} \\
+    \textbf{\MakeUppercase{\namaLab}}
+    
+    \vspace{0.5cm}
+    
+    \textbf{\judul}
+    
+    \vspace{0.5cm}
+    
+    \startMagang -- \akhirMagang
+\end{center}
+
+\vspace{2cm} % Jarak vertikal sebelum blok tanda tangan
+
+% ----- Blok Tanda Tangan (2 Kolom) -----
+% Menggunakan minipage untuk membuat tata letak kolom
+\noindent % Mencegah indentasi paragraf
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+    Mengetahui, \\
+    Pembimbing Utama
+    
+    % Sediakan ruang untuk tanda tangan. Anda bisa menyisipkan gambar di sini.
+    \vspace{0.25cm}\includegraphics[width=0.5\linewidth]{assets/TandaTangan.png}\\[0.25cm]
+
+    
+    \textbf{\pembimbingUtamaTanpaProf} \\
+    \textit{Head of BMW Lab NTUST}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+    \centering
+    Menyetujui, \\
+    Pembimbing Harian
+    
+    % Sediakan ruang untuk tanda tangan.
+    \vspace{0.25cm}\includegraphics[width=0.5\linewidth]{assets/TandaTangan.png}\\[0.25cm]
+    
+    \textbf{\pembimbingHarian} \\
+    \textit{Master Student / Mentor} \\
+    \textit{BMW Lab NTUST}
+\end{minipage}
+
+\vspace{1cm} % Jarak vertikal sebelum blok tanda tangan terakhir
+
+% ----- Blok Tanda Tangan Koordinator -----
+\begin{center}
+    Mengetahui, \\
+    Koordinator Kerja Praktik \\
+    Departemen Teknik Elektro \\
+    Fakultas Teknik Universitas Indonesia
+    
+    % Sediakan ruang untuk tanda tangan.
+    \vspace{2cm} 
+    
+    \textbf{Dr. Ruki Harwahyu, ST, MT, MSc.} \\
+    NUP : 100120910231409891
+\end{center}
+
+% ----- Footer -----
+% \vfill mendorong konten ini ke bagian bawah halaman
+\vfill 

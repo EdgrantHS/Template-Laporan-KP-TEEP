@@ -1,0 +1,31 @@
+%
+% Halaman Abstrak
+%
+% @author  Andreas Febrian
+% @version 1.00
+%
+
+\chapter*{Abstrak}
+
+\vspace*{0.2cm}
+{
+	\setlength{\parindent}{0pt}
+	
+	\begin{tabular}{@{}l l p{10cm}}
+		Nama&: & \penulis \\
+		Program Studi&: & \program \\
+		Judul&: & \judul \\
+	\end{tabular}
+
+	\bigskip
+	\bigskip
+
+    Laporan ini membahas tentang implementasi \textit{management} dan \textit{orchestration} \textit{WiFi} pada jaringan \textit{5G} melalui pengembangan \textit{WiFi RAN Digital Twin}. \textit{Digital Twin} adalah representasi virtual dari sistem fisik yang memungkinkan \textit{monitoring}, analisis, dan optimisasi secara \textit{real-time}. Penulis melakukan kerja praktek di \namaLab, \namaUniv, dan mengembangkan sistem yang mengintegrasikan \textit{WiFi Access Point} dengan arsitektur \textit{O-RAN} melalui antarmuka \textit{O1}. Penulis mengimplementasikan tiga komponen utama: \textit{WiFi Data Crawler} yang mengumpulkan metrik performa dari \textit{Ubiquiti UniFi Controller}, \textit{O1 NETCONF Adapter} yang menerjemahkan data \textit{WiFi} ke format standar \textit{O-RAN}, dan \textit{VES} (\textit{Virtual Event Streaming}) \textit{Agent} yang mengirimkan notifikasi pengukuran ke \textit{Service Management and Orchestration} (SMO). Penulis menggunakan bahasa pemrograman \textit{Python} dengan pustaka \textit{sysrepo} untuk implementasi \textit{O1 interface}, \textit{library} \textit{requests} untuk \textit{data crawling}, dan format \textit{XML} sesuai standar \textit{3GPP} untuk \textit{performance measurement}. Sistem juga dilengkapi dengan \textit{dashboard} berbasis \textit{InfluxDB} dan \textit{Grafana} untuk visualisasi data \textit{real-time}. Penulis melakukan pengujian menggunakan \textit{simulator} \textit{NS-3} untuk memvalidasi akurasi data dan mengukur \textit{latency} \textit{end-to-end} dari pengumpulan data hingga notifikasi \textit{VES}. Hasil implementasi menunjukkan bahwa \textit{WiFi} dapat diintegrasikan secara efektif ke dalam ekosistem \textit{5G} melalui standar \textit{O-RAN}, memungkinkan manajemen terpusat dan optimisasi jaringan yang lebih baik.
+
+
+    \vspace{1em}
+    \noindent
+    \textbf{Kata Kunci:} \textit{Digital Twin}, \textit{O-RAN}, \textit{O1 Interface}, \textit{Service Management and Orchestration}, \textit{VES}, \textit{WiFi RAN}
+}
+
+\newpage

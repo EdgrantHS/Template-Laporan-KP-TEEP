@@ -140,7 +140,11 @@
   \floatplacement{table}{H}
 
 % Bibliography
-\usepackage{natbib}
+\usepackage[style=ieee]{biblatex}
+\DefineBibliographyStrings{english}{
+  urlseen = {accessed on},
+}
+\addbibresource{pustaka.bib}
 
 % Slanted fraction symbol
 \usepackage{nicefrac}

@@ -28,7 +28,11 @@
 *.glo
 *.gls
 *.ist
-*.acn
+*.acgit rm --cached *.bbl *.tocgit rm --cached *.bbl *.toc# Ignore minted temporary files
+_minted*
+
+# Ignore internal configuration files
+_internals/n
 *.acr
 *.alg
 *.loa
@@ -92,3 +96,9 @@
 *.run.xml
 *.bcf
 *.blx.bib
+
+# Ignore minted temporary files
+_minted*
+
+# Ignore internal configuration files
+_internals/

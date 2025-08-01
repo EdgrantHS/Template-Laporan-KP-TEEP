@@ -20,57 +20,6 @@
 *.dvi
 *.ps
 *.pdf
-*.bbl
-*.ilg
-*.ind
-*.idx
-*.glg
-*.glo
-*.gls
-*.ist
-*.acgit rm --cached *.bbl *.tocgit rm --cached *.bbl *.toc# Ignore minted temporary files
-_minted*
-
-# Ignore internal configuration files
-_internals/n
-*.acr
-*.alg
-*.loa
-*.lol
-*.maf
-*.mtc*
-*.maf
-*.mlf
-*.mlt
-*.tdo
-*.upa
-*.upb
-*.xmpdata
-*.xmpi
-*.run.xml
-*.bcf
-*.blx.bib
-*.blg
-*.bbl
-*.fdb_latexmk
-*.fls
-*.synctex.gz
-*.synctex(busy)
-*.synctex.gz(busy)
-*.pdfsync
-*.xdv
-*.nav
-*.snm
-*.vrb
-*.lof
-*.lot
-*.toc
-*.out
-*.log
-*.aux
-*.dvi
-*.ps
-*.pdf
 *.ilg
 *.ind
 *.idx
@@ -85,7 +34,6 @@ _internals/n
 *.lol
 *.maf
 *.mtc*
-*.maf
 *.mlf
 *.mlt
 *.tdo
@@ -98,7 +46,13 @@ _internals/n
 *.blx.bib
 
 # Ignore minted temporary files
-_minted*
+_minted*/
 
-# Ignore internal configuration files
-_internals/
+# Ignore PDF outputs
+*.pdf
+*.run.xml
+*.bcf
+*.blx.bib
+
+# Ignore minted temporary files
+_minted*

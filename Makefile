@@ -3,7 +3,7 @@ LATEXMK = latexmk
 RM = rm -fr	
 
 # Project-specific settings
-DOCNAME = thesis
+DOCNAME = laporan-kp
 
 # Targets
 all: doc

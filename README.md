@@ -11,6 +11,7 @@ This template is a modification of the original **UI Style** thesis template.
 ### Editing Variables
 
 The main variables for the report are located in `settings.tex`. You can change the following:
+
 - Author name and student number (`\penulis`, `\npm`)
 - Title (`\judul`, `\Judul`, `\judulInggris`)
 - Supervisors (`\pembimbingUtama`, `\pembimbingHarian`)
@@ -20,60 +21,63 @@ The main variables for the report are located in `settings.tex`. You can change 
 ### Building the Document
 
 #### Overleaf
+
 1. Zip the entire project folder.
 2. In your Overleaf dashboard, click "New Project" and select "Upload Project".
 3. Select the zipped file.
-4. Set the main document to `thesis.tex` in the Overleaf file menu.
+4. Set the main document to `laporan-kp.tex` in the Overleaf file menu.
 
 #### TeXstudio or VS Code (with LaTeX Workshop)
+
 1. **Prerequisites:**
-    - A LaTeX distribution like [MiKTeX](https://miktex.org/) (Windows), [MacTeX](http://www.tug.org/mactex/) (macOS), or [TeX Live](https://www.tug.org/texlive/) (Linux).
-    - [Python](https://www.python.org/downloads/) with `pygments` installed for code highlighting: `pip install Pygments`.
+    - TeX Live, installation guide [here](https://www.tug.org/texlive/windows.html).
+    - LaTeX Workshop extension for VS Code.
 2. **Setup:**
     - Open the project folder in your editor.
-    - Ensure `thesis.tex` is set as the root/main document.
+    - Ensure `laporan-kp.tex` is set as the root/main document.
 3. **Build:**
     - Compile the document using a `pdflatex` engine.
     - **Important:** You must enable `--shell-escape` for the `minted` package to work correctly.
     - The typical build sequence is: `pdflatex -> bibtex -> pdflatex -> pdflatex`.
 
 ### File Structure
-```
+
+```plaintext
 .
-├── .gitignore               # Specifies files for Git to ignore (e.g., compiled output)
-├── Makefile                 # Automates the build process (for command-line users)
-├── README.md                # This file, providing an overview of the project
-├── acknowledgement.txt      # The acknowledgements section content
-├── assets/                  # Directory for images and other non-text assets
-│   ├── TandaTangan.png      # Placeholder image for a signature
-│   └── pics/                # Directory for pictures used in the document
+├── .gitignore                           # Specifies files for Git to ignore (e.g., compiled output)
+├── Makefile                             # Build automation with latexmk for PDF generation
+├── README.md                            # This file, providing an overview of the project
+├── acknowledgement.txt                  # Template acknowledgements and contributor information
+├── assets/                              # Directory for images and other non-text assets
+│   ├── TandaTangan.png                  # Signature image placeholder
+│   └── pics/                            # Directory for pictures used in the document
 │       ├── creative_common.png
-│       ├── makara.eps
+│       ├── makara.eps                   # UI logo in EPS format
 │       └── mark.png
-├── istilah.tex              # A glossary of terms
-├── pustaka.bib              # Bibliography database in BibTeX format
-├── settings.tex             # Main configuration: title, author, dates, etc.
-├── src/                     # Source .tex files for the report's content
-│   ├── 00-front_matter/     # Chapters for the front matter (abstract, TOC, etc.)
-│   │   ├── 01-persetujuan.tex
-│   │   ├── 02-orisinalitas.tex
-│   │   ├── 03-pengesahan_sidang.tex
-│   │   ├── 04-pengantar.tex
-│   │   ├── 05-persetujuan_publikasi.tex
-│   │   ├── 06-abstrak.tex
-│   │   └── 07-abstract.tex
-│   ├── 01-body/             # Chapters for the main body of the report
-│   │   ├── 01-bab1.tex
-│   │   ├── 02-bab2.tex
-│   │   ├── 03-bab3.tex
-│   │   ├── 04-bab4.tex
-│   │   ├── 05-bab5.tex
-│   │   ├── 06-bab6.tex
-│   │   └── 99-kesimpulan.tex
-│   └── 99-back_matter/      # Chapters for the back matter (appendices)
-│       └── lampiran.tex
-├── template_license.txt     # The license for this template
-└── thesis.tex               # The main LaTeX file that assembles the document
+├── istilah.tex                          # Definitions of terms to be italicized or bolded (by Andreas Febrian)
+├── pustaka.bib                          # Bibliography database in BibTeX format
+├── settings.tex                         # Document information configuration (title, author, dates, etc.)
+├── src/                                 # Source .tex files for the report's content
+│   ├── 00-front_matter/                 # Front matter pages
+│   │   ├── 01-persetujuan.tex           # Halaman Pengesahan (Approval page)
+│   │   ├── 02-orisinalitas.tex          # Halaman Pernyataan Orisinalitas (Originality statement)
+│   │   ├── 03-pengesahan_sidang.tex     # Halaman Pengesahan Laporan Kerja Praktik (Internship approval)
+│   │   ├── 04-pengantar.tex             # Kata Pengantar (Preface) - content included
+│   │   ├── 05-persetujuan_publikasi.tex # Halaman Persetujuan Publikasi (Publication consent)
+│   │   ├── 06-abstrak.tex               # Abstrak (Indonesian abstract)
+│   │   └── 07-abstract.tex              # Abstract (English abstract)
+│   ├── 01-body/                         # Main content chapters
+│   │   ├── 01-bab1.tex                  # Chapter 1 (includes background section)
+│   │   ├── 02-bab2.tex                  # Chapter 2
+│   │   ├── 03-bab3.tex                  # Chapter 3
+│   │   ├── 04-bab4.tex                  # Chapter 4
+│   │   ├── 05-bab5.tex                  # Chapter 5
+│   │   ├── 06-bab6.tex                  # Chapter 6
+│   │   └── 99-kesimpulan.tex            # Kesimpulan dan Saran (Conclusions and suggestions)
+│   └── 99-back_matter/                  # Back matter
+│       └── lampiran.tex                 # Appendices
+├── template_license.txt                 # Creative Commons license for this template
+└── laporan-kp.tex                           # Main LaTeX file - Template Laporan Kerja Praktek
 ```
 
 ---
@@ -92,3 +96,4 @@ Contributors:
 2. Andre Tampubolon
 3. Erik Dominikus
 4. Fahrurrozi Rahman
+

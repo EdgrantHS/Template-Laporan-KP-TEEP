@@ -1,7 +1,7 @@
 %-----------------------------------------------------------------------------%
 \chapter{\babTiga}
 %-----------------------------------------------------------------------------%
-\todo{tambahkan kata-kata pengantar bab 1 disini}
+\todo{Ubah setiap subbab pada bab ini}
 
 
 %-----------------------------------------------------------------------------%
@@ -69,3 +69,52 @@ persamaannya masing-masing.
 	a^{m^{a \, ^{n}\log b }} = b^{\frac{m}{n}}
 \end{align}
 
+
+%-----------------------------------------------------------------------------%
+\section{Memasukan Gambar}
+%-----------------------------------------------------------------------------%
+Setiap gambar dapat diberikan caption dan diberikan label. Label dapat 
+digunakan untuk menunjuk gambar tertentu. 
+Jika posisi gambar berubah, maka nomor gambar juga akan diubah secara 
+otomatis. 
+Begitu juga dengan seluruh referensi yang menunjuk pada gambar tersebut. 
+Contoh sederhana adalah \pic~\ref{fig:testGambar}. 
+Silahkan lihat code \latex~dengan nama bab2.tex untuk melihat kode lengkapnya. 
+Harap diingat bahwa caption untuk gambar selalu terletak dibawah gambar. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.50\textwidth]
+		{assets/pics/creative_common.png}
+	\caption{\license.}
+	\label{fig:testGambar}
+\end{figure}
+
+
+%-----------------------------------------------------------------------------%
+\section{Membuat Tabel}
+%-----------------------------------------------------------------------------%
+Seperti pada gambar, tabel juga dapat diberi label dan caption. 
+Caption pada tabel terletak pada bagian atas tabel. 
+Contoh tabel sederhana dapat dilihat pada \tab~\ref{tab:tab1}.
+
+\begin{table}
+	\centering
+	\caption{Contoh Tabel}
+	\label{tab:tab1}
+	\begin{tabular}{| l | c r |}
+		\hline
+		& kol 1 & kol 2 \\ 
+		\hline
+		baris 1 & 1 & 2 \\
+		baris 2 & 3 & 4 \\
+		baris 3 & 5 & 6 \\
+		jumlah  & 9 & 12 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+Ada jenis tabel lain yang dapat dibuat dengan \latex~berikut 
+beberapa diantaranya. 
+Contoh-contoh ini bersumber dari 
+\url{http://en.wikibooks.org/wiki/LaTeX/Tables}

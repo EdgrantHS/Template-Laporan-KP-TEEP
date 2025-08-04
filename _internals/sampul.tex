@@ -21,27 +21,38 @@
         
         \vspace*{1.0cm}
         % judul thesis harus dalam 14pt Times New Roman
+        \large
         \bo{\Judul} \\[1.0cm]
 
-        \vspace*{2.5 cm}    
+        \vspace*{0.5 cm}    
         % harus dalam 14pt Times New Roman
         \bo{\Type}
+        \normalsize
 
-        \vspace*{3 cm}       
+        \vspace*{6 cm}       
+
         % penulis dan npm
-        \Penulis \\
-        \npm \\
+        \bo{
+            \Penulis \\
+            \npm \\
+        }
 
-        \vspace*{5.0cm}
+        \vspace*{1 cm}
 
         % informasi mengenai fakultas dan program studi
+        \setstretch{2.5} % Set line spacing
         \bo{
             DEPARTEMEN TEKNIK ELEKTRO\\
-        	FAKULTAS \Fakultas UNIVERSITAS INDONESIA\\
+        	FAKULTAS \Fakultas \ UNIVERSITAS INDONESIA\\
         	PROGRAM STUDI \Program \\
             \vspace{2em}
+        }
+        \onehalfspacing
+        \setstretch{1.5} % Reset line spacing
+
+        \bo{
         	DEPOK \\
-        	Agustus \tahun
+        	AGUSTUS \tahun
         }
     \end{center}
 \end{titlepage}
